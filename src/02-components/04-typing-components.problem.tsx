@@ -1,6 +1,12 @@
 import React from "react";
 
-export const Button = (props: unknown) => {
+interface Props {
+  className: string;
+}
+
+// this works too
+//export const Button = (props: Props) => {
+export const Button = (props: { className: string}) => {
   return <button className={props.className}></button>;
 };
 
